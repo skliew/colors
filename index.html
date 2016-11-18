@@ -144,22 +144,6 @@
 .scooter { background-color: #618a8b; }
 .discrete { background-color: #8b857e; }
 .fusion { background-color: #4d6b6e; }
-
-#div1 {
-  width: 600px;
-  height: 800px;
-  float: left;
-}
-#div2 {
-  width: 600px;
-  height: 800px;
-  float: left;
-}
-#div3 {
-  width: 600px;
-  height: 800px;
-  float: left;
-}
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
     <script>
@@ -313,6 +297,9 @@ const colors = [
       const selectN = `#select${n}`;
       const divN = `#div${n}`;
       $(selectN).append($('<option>', { selected: 'None', text: 'Select color'}));
+      $(divN).css('width', '33%');
+      $(divN).css('height', '800px');
+      $(divN).css('float', 'left');
       colors.forEach((color) => {
         $(selectN).append($('<option>', { value: color, text: color }));
       });
