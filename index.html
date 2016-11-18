@@ -298,7 +298,7 @@ const colors = [
       const divN = `#div${n}`;
       $(selectN).append($('<option>', { selected: 'None', text: 'Select color'}));
       $(divN).css('width', '33%');
-      $(divN).css('height', '800px');
+      $(divN).css('height', '100%');
       $(divN).css('float', 'left');
       colors.forEach((color) => {
         $(selectN).append($('<option>', { value: color, text: color }));
